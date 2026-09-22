@@ -1,0 +1,9 @@
+program output:
+13888
+10418
+
+In row major order, the window is not stored together, only values of x with the same y and z
+are stored contiguously. When we increment y and z, we jump to a different part of the array.
+Reading a single 4×4×4 window means jumping between 16 separate rows for the y and z combinations.
+In Morton order, the values in each 4x4x4 window are stored contiguously so 
+the window can all be read in one pass when convoluting, therefore faster.

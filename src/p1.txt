@@ -1,0 +1,7 @@
+Program's output:
+6991 347898375840389362
+32870 347898375840389362
+
+Row major order is much quicker to access because data is stored sequentially in rows.
+When accessing elements in column major order, we must jump between blocks of memory 
+multiple times for each column resulting in much longer time.
